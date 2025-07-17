@@ -54,7 +54,7 @@ public class Box {
     public boolean ritiraBox(int sceltaBox2, int passwordbox){
         if (boxArray[sceltaBox2 -1].getOccupato()) {
             if(Arraypass[sceltaBox2 -1]  == passwordbox){
-                System.out.println("Sportello aperto, riponi l'oggetto");
+                System.out.println("Sportello aperto, riprendi l'oggetto");
                 boxArray[sceltaBox2 -1].setOccupato(false);
                 return false;
             }else
@@ -73,6 +73,7 @@ public class Box {
                 return false;
                 }else
                     boxArray[sceltaBox -1].setOccupato(true);
+                    System.out.println(" Sportello aperto, riponi gli oggetti");
                     System.out.println(" Hai prenotato il box " + boxArray[sceltaBox -1].getId());
                     Arraypass[sceltaBox -1] = 0;
                     Arraypass[sceltaBox -1] = passwordbox2;
